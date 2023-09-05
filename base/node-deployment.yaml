@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: demo-nodejs-backend
-          image: {{ecr.id}}.dkr.ecr.ap-northeast-2.amazonaws.com/dev-backend
+          image: ${ACCOUNT_ID}.dkr.ecr.ap-northeast-2.amazonaws.com/dev-backend
           imagePullPolicy: Always
           ports:
             - containerPort: 3000
